@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "redeploy": "git add -A && git commit -m 'redeploy' && heroku restart && heroku ps:scale web=1 && heroku open && heroku logs --tail"
   },
   "author": "CastroM13",
   "license": "ISC",
