@@ -1,4 +1,4 @@
-const connStr = "Driver={ODBC Driver 13 for SQL Server};Server=tcp:baserelay.database.windows.net,1433;Database=Project Aria;Uid=castrom13;Pwd={your_password_here};Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;";
+const connStr = "Driver={ODBC Driver 13 for SQL Server};Server=tcp:baserelay.database.windows.net,1433;Database=Project Aria;Uid=castrom13;Pwd=5398Samanco@;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;";
 const sql = require("mssql");
 var _ = require("lodash");
 var express = require("express");
