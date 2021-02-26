@@ -15,6 +15,7 @@ app.get("user/:id/characters", (req, res, next) => {
   sql
     .connect(connStr)
     .then(async function retorno(conn) {
+      console.log("Passou");
       const result = await sql.query`SELECT * FROM fn_showUserCharacters(${req.params.id})`;
       res.json(result);
     })
