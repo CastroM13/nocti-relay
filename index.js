@@ -8,7 +8,7 @@ app.listen(process.env.PORT || 3000, process.env.YOUR_HOST || "0.0.0.0", () => {
   console.log("Server running on port ", process.env.PORT || 3000);
 });
 
-// app.use(express.json());
+app.use(express.json());
 
 app.get("/", (req, res, next) => {
   res.send("<div>Sucesso!</div>")
