@@ -25,7 +25,7 @@ app.get("/user/:id/characters", (req, res, next) => {
     .catch((err) => console.log("erro! " + err));
 });
 
-app.post("login", (req, res, next) => {
+app.post("/login", (req, res, next) => {
     const value = req.body;
     sql
       .connect(connStr)
