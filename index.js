@@ -30,7 +30,7 @@ app.post("/login", (req, res, next) => {
     sql
       .connect(connStr)
       .then(async function retorno(conn) {
-        const result = await sql.query`SELECT * FROM fn_login(${value.Username},${value.Password})`;
+        const result = await sql.query`SELECT * FROM fn_login(${value.Username}, ${value.Password})`;
         res.json(result);
       })
       .catch((err) => console.log("erro! " + err));
