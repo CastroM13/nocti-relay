@@ -11,7 +11,7 @@ app.listen(process.env.PORT || 3000, process.env.YOUR_HOST || "0.0.0.0", () => {
 // app.use(express.json());
 
 app.get("/", (req, res, next) => {
-  res.send(<div>Sucesso!</div>)
+  res.send("<div>Sucesso!</div>")
 });
 
 app.get("/user/:id/characters", (req, res, next) => {
