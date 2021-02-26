@@ -11,7 +11,7 @@ app.listen(process.env.PORT || 3000, process.env.YOUR_HOST || "0.0.0.0", () => {
 
 app.use(express.json());
 
-app.get("user/:id/characters", (req, res, next) => {
+app.post("user/:id/characters", (req, res, next) => {
   sql
     .connect(connStr)
     .then(async function retorno(conn) {
