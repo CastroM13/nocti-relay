@@ -15,9 +15,9 @@ app.post("user/:id/characters", (req, res, next) => {
   sql
     .connect(connStr)
     .then(async function retorno(conn) {
-      console.log("Passou");
-      const result = await sql.query`SELECT * FROM fn_showUserCharacters(${req.params.id})`;
-      res.json(result);
+      res.json(conn);
+    //   const result = await sql.query`SELECT * FROM fn_showUserCharacters(${req.params.id})`;
+    //   res.json(result);
     })
     .catch((err) => console.log("erro! " + err));
 });
